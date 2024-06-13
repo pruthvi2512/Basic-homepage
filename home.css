@@ -1,0 +1,123 @@
+body{
+    height: 100vh;
+    background:url(https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg?t=st=1718171988~exp=1718175588~hmac=15d854480e1389d9d2dbd6502bcedc64b7b4fd61c3d56ada20c97dd847f413b6&w=1380);
+    background-position: center;
+    background-size: cover;
+}
+.navbar a{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu-link{
+    display: flex;
+    gap: 40px;
+    list-style-type:none;
+}
+.navbar .logo span{
+    font-size: 2.1rem;
+    font-family: 600;
+}
+.navbar a:hover{
+    color:brown;
+}
+.hero-section{
+    height: 100vh;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+.hero-section .content{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+.hero-section .content h1{
+    font-size: 3rem;
+    max-width: 600px;
+
+}
+.hero-section .content h1:hover{
+    color: orange;
+}
+.hero-section .content p{
+    font-weight: 200;
+    max-width: 600px;
+}
+.hero-section .content button{
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    margin-top: 38px;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.hero-section .content button:hover{
+    color: #fff;
+    background-color: orange;
+}
+
+.btn-close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+
+}
+.bi{
+    color: #fff;
+    display: none;
+}
+@media screen and (max-width:850px) {
+    .menu-link{
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 250px;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        padding: 70px 40px 0;
+        transition: 0.3s ease;
+      
+    }
+    header.show-menu .menu-link{
+        left:0;
+    }
+    .navbar a{
+        color:black;
+    }
+    .btn-close,.bi{
+        display: block;
+    }
+   .navbar .logo{
+        color: #fff;
+    }
+    .hero-section .content{
+        text-align: center;
+    }
+    .hero-section .content :is(h1,p){
+max-width: 100%;
+    }
+
+
+    
+    
+}
